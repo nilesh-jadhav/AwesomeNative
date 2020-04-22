@@ -15,14 +15,14 @@ export class Header extends React.Component {
 
     render() {
         return(
-            <View style={styles.headerStyle}>
+            <View style = { styles.headerStyle }>
                 <Image
-                    style={styles.logoStyle}
-                    source={ require('./img/blueconch.png')}
+                    style = { styles.logoStyle }
+                    source = { require('./img/blueconch.png') }
                 />
                 <Text
-                    style={styles.headerText}
-                    onPress={this.toggleUser}>{this.state.isLoggedIn ? 'Sample User' : this.props.message}
+                    style = { styles.headerText }
+                    onPress = { this.toggleUser }>{ this.state.isLoggedIn ? 'Sample User' : this.props.message }
                 </Text>
             </View>
         );
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
       flex: 1,
     },
     headerStyle: {
-        paddingTop: 30,
+        paddingTop: 20,
         paddingRight: 10,
         paddingBottom: 10,
         backgroundColor: Platform.OS === 'android' ? '#31e981' : '#35605a',
