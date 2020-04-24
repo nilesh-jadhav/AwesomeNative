@@ -11,7 +11,7 @@ export class Menu extends React.Component {
         return(
             <View style = { styles.container }>
                 <View style = { styles.buttonRow }>
-                    <TouchableOpacity style = { styles.buttonStyle } onPress = { this.onPress } >
+                    <TouchableOpacity style = { styles.buttonStyle } onPress = { () => this.props.navigation.navigate('Video') } >
                         <Text style = { styles.buttonText }>LESSON</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style = { styles.buttonStyle } onPress = { this.onPress } >
